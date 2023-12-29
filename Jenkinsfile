@@ -1,27 +1,3 @@
-pipeline {
-    agent { node { label 'workstation' } }
+@Library('vijayavani-library') _
 
-    stages {
-        stage('Compile') {
-            steps {
-                echo 'Compile'
-            }
-        }
-        stage('Test cases') {
-            steps {
-                echo 'Test cases'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                echo 'Build'
-            }
-        }
-        stage('Release') {
-            steps {
-                echo 'Release'
-            }
-        }
-    }
-}
+ci()
