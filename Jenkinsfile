@@ -1,4 +1,5 @@
 @Library('vijayavani-library') _
 
-app_type = "nodejs"
+env.app_type = "nodejs"
+
 ci()
